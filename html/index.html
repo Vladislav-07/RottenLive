@@ -11,11 +11,36 @@
 
 </head>
 <body>
+
+  <div class="pauseMenu">
+    <div class="pauseMenuSub-container">
+      <div class="pauseMenu-text-ontainer">
+        <h1 class="pauseText"> Пауза </h1>
+      </div>
+      <div class="pauseMenu-play">
+        <button class="pauseMenuClose" onclick="pauseMenuClose()"> <img src="../img/pause.png" alt="" width="30px" height="30px"> </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu">
+    <div class="count-container">
+      <h1 class="countBullet">  Патрон: 5  </h1>   
+      <h1 class="countKill">  Убито: 0 </h1>
+    </div>
+    <div class="pause-container">
+      <button class="pauseMenuOpen" onclick="pauseMenuOpen()"> <img src="../img/pause.png" alt="" width="30px" height="30px"> </button>
+    </div>
+  </div>
   
   <!-- Игровое поле -->
-
+  
   <div class="game-scene">
-    <div class="player "></div>
+    <div class="zombi"> <img src="../img/zombi.png" alt="" width="100px"> </div>
+    <div class="player"> 
+      <img src="../img/player.png" alt="" width="150px"> 
+      <img src="../img/bullet.png" alt="" width="30px" class="bullet bullet1"> 
+    </div>
   </div>
 
   <!-- Поле с кнопками передвижения -->
