@@ -11,6 +11,7 @@ html, body {
 
 body {
   background-color: rgb(14, 135, 14);
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,9 +71,23 @@ body {
 
 .zombi {
   position: absolute;
-  margin-top: 20px;
-  margin-right: 500px;
+  /* margin-top: 20px;
+  margin-right: 500px; */
   /* background-color: black; */
+  /* border-left: red 3px solid; */
+  /* border-right: white 3px solid; */
+  /* transition: all 5s; */
+}
+
+.zombi1 {
+  margin-top: 20px;
+  margin-right: 1500px;
+}
+
+.zombi2 {
+  margin-top: 20px;
+  margin-right: -1500px;
+  rotate: 180deg;
 }
 
 .player {
@@ -81,10 +96,11 @@ body {
   rotate: 90deg;
   top: 0px;
   left: 0px;
+  /* border-left: red 3px solid; */
+  /* border-right: white 3px solid; */
 }
 
 .bullet {
-  /* padding: 53px; */
   position: relative;
   z-index: -50;
   transition: all 2s;
@@ -92,6 +108,8 @@ body {
   top: -10px;
   left: -100px;
   /* background-color: blue; */
+  /* border-top: red 3px solid; */
+  /* border-bottom: white 3px solid; */
 }
 
 .playerRight {
@@ -151,4 +169,3 @@ button {
   border: none;
   border-radius: 5px;
 }
-
